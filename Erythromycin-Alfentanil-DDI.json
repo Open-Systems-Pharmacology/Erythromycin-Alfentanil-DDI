@@ -1387,7 +1387,7 @@
         },
         {
           "Name": "Infusion time",
-          "Value": 30.0,
+          "Value": 5.0,
           "Unit": "min"
         }
       ]
@@ -1415,7 +1415,7 @@
                 },
                 {
                   "Name": "Infusion time",
-                  "Value": 30.0,
+                  "Value": 5.0,
                   "Unit": "min"
                 }
               ]
@@ -1458,7 +1458,7 @@
                 },
                 {
                   "Name": "Infusion time",
-                  "Value": 30.0,
+                  "Value": 5.0,
                   "Unit": "min"
                 }
               ]
@@ -1658,7 +1658,7 @@
       "Parameters": [
         {
           "Path": "Applications|IV_Alfentanil_0.05mg/kg_30min_Control|Application_1|ProtocolSchemaItem|Infusion time",
-          "Value": 30.0,
+          "Value": 5.0,
           "Unit": "min"
         }
       ],
@@ -1758,7 +1758,7 @@
             }
           ],
           "Name": "Time Profile Analysis",
-          "OriginText": "Erythromycin-Alfentanil-DDI_NEW\nBartkowski1989_Control\n2019-11-07 11:29"
+          "OriginText": "Erythromycin-Alfentanil-DDI\nBartkowski1989_Control\n2020-01-02 14:19"
         }
       ]
     },
@@ -1853,7 +1853,7 @@
       "Parameters": [
         {
           "Path": "Applications|IV_Alfentanil_0.05mg/kg_30min_Day1|Application_1|ProtocolSchemaItem|Infusion time",
-          "Value": 30.0,
+          "Value": 5.0,
           "Unit": "min"
         },
         {
@@ -2001,7 +2001,7 @@
             }
           ],
           "Name": "Time Profile Analysis",
-          "OriginText": "Erythromycin-Alfentanil-DDI\nBartkowski1989_Perpetrator_Day1\n2019-12-06 10:15"
+          "OriginText": "Erythromycin-Alfentanil-DDI\nBartkowski1989_Perpetrator_Day1\n2020-01-02 14:20"
         }
       ],
       "Interactions": [
@@ -2103,7 +2103,7 @@
       "Parameters": [
         {
           "Path": "Applications|IV_Alfentanil_0.05mg/kg_30min_Day7|Application_1|ProtocolSchemaItem|Infusion time",
-          "Value": 30.0,
+          "Value": 5.0,
           "Unit": "min"
         },
         {
@@ -2316,7 +2316,7 @@
             }
           ],
           "Name": "Time Profile Analysis",
-          "OriginText": "Erythromycin-Alfentanil-DDI\nBartkowski1989_Perpetrator_Day7\n2019-12-06 10:15"
+          "OriginText": "Erythromycin-Alfentanil-DDI\nBartkowski1989_Perpetrator_Day7\n2020-01-02 14:23"
         }
       ],
       "Interactions": [
