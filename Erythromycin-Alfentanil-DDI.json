@@ -810,187 +810,6 @@
   ],
   "Compounds": [
     {
-      "Name": "Alfentanil",
-      "IsSmallMolecule": true,
-      "PlasmaProteinBindingPartner": "Glycoprotein",
-      "Lipophilicity": [
-        {
-          "Name": "Fit",
-          "Parameters": [
-            {
-              "Name": "Lipophilicity",
-              "Value": 1.75,
-              "Unit": "Log Units",
-              "ValueOrigin": {
-                "Source": "Publication",
-                "Description": "Hanke 2018"
-              }
-            }
-          ]
-        }
-      ],
-      "FractionUnbound": [
-        {
-          "Name": "Healthy",
-          "Species": "Human",
-          "Parameters": [
-            {
-              "Name": "Fraction unbound (plasma, reference value)",
-              "Value": 0.1,
-              "ValueOrigin": {
-                "Source": "Publication",
-                "Description": "Hanke 2018"
-              }
-            }
-          ]
-        },
-        {
-          "Name": "Child-Pugh C",
-          "IsDefault": false,
-          "Species": "Human",
-          "Parameters": [
-            {
-              "Name": "Fraction unbound (plasma, reference value)",
-              "Value": 0.27027,
-              "ValueOrigin": {
-                "Source": "Publication",
-                "Description": "Hanke 2018"
-              }
-            }
-          ]
-        },
-        {
-          "Name": "Child-Pugh A",
-          "IsDefault": false,
-          "Species": "Human",
-          "Parameters": [
-            {
-              "Name": "Fraction unbound (plasma, reference value)",
-              "Value": 0.15625,
-              "ValueOrigin": {
-                "Source": "Publication",
-                "Description": "Hanke 2018"
-              }
-            }
-          ]
-        },
-        {
-          "Name": "Child-Pugh B",
-          "IsDefault": false,
-          "Species": "Human",
-          "Parameters": [
-            {
-              "Name": "Fraction unbound (plasma, reference value)",
-              "Value": 0.1656,
-              "ValueOrigin": {
-                "Source": "Publication",
-                "Description": "Hanke 2018"
-              }
-            }
-          ]
-        }
-      ],
-      "Solubility": [
-        {
-          "Name": "Baneyx 2014",
-          "Parameters": [
-            {
-              "Name": "Solubility at reference pH",
-              "Value": 992.0,
-              "Unit": "mg/l",
-              "ValueOrigin": {
-                "Source": "Publication",
-                "Description": "Hanke 2018"
-              }
-            },
-            {
-              "Name": "Reference pH",
-              "Value": 6.5,
-              "ValueOrigin": {
-                "Source": "Publication",
-                "Description": "Hanke 2018"
-              }
-            }
-          ]
-        }
-      ],
-      "IntestinalPermeability": [
-        {
-          "Name": "Fit",
-          "Parameters": [
-            {
-              "Name": "Specific intestinal permeability (transcellular)",
-              "Value": 3.48E-06,
-              "Unit": "cm/min",
-              "ValueOrigin": {
-                "Source": "Publication",
-                "Description": "Hanke 2018"
-              }
-            }
-          ]
-        }
-      ],
-      "PkaTypes": [
-        {
-          "Type": "Base",
-          "Pka": 6.5,
-          "ValueOrigin": {
-            "Source": "Publication",
-            "Description": "Hanke 2018"
-          }
-        }
-      ],
-      "Processes": [
-        {
-          "InternalName": "MetabolizationIntrinsic_FirstOrder",
-          "DataSource": "1st order CL",
-          "Species": "Human",
-          "Molecule": "CYP3A4",
-          "Parameters": [
-            {
-              "Name": "Intrinsic clearance",
-              "Value": 0.504,
-              "Unit": "l/min",
-              "ValueOrigin": {
-                "Source": "Publication",
-                "Description": "Hanke 2018"
-              }
-            }
-          ]
-        },
-        {
-          "InternalName": "GlomerularFiltration",
-          "DataSource": "GFR",
-          "Species": "Human",
-          "Parameters": [
-            {
-              "Name": "GFR fraction",
-              "Value": 0.06,
-              "ValueOrigin": {
-                "Source": "Publication",
-                "Description": "Hanke 2018"
-              }
-            }
-          ]
-        }
-      ],
-      "CalculationMethods": [
-        "Cellular partition coefficient method - Rodgers and Rowland",
-        "Cellular permeability - PK-Sim Standard"
-      ],
-      "Parameters": [
-        {
-          "Name": "Molecular weight",
-          "Value": 416.52,
-          "Unit": "g/mol",
-          "ValueOrigin": {
-            "Source": "Publication",
-            "Description": "Hanke 2018"
-          }
-        }
-      ]
-    },
-    {
       "Name": "Erythromycin",
       "IsSmallMolecule": true,
       "Lipophilicity": [
@@ -1308,6 +1127,163 @@
           "ValueOrigin": {
             "Source": "Internet",
             "Description": "drugbank.ca"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "Alfentanil",
+      "IsSmallMolecule": true,
+      "PlasmaProteinBindingPartner": "Glycoprotein",
+      "Lipophilicity": [
+        {
+          "Name": "Fit",
+          "Parameters": [
+            {
+              "Name": "Lipophilicity",
+              "Value": 1.8463211883,
+              "Unit": "Log Units",
+              "ValueOrigin": {
+                "Source": "ParameterIdentification",
+                "Method": "ParameterIdentification",
+                "Description": "Value updated from 'Parameter Identification 4' on 2019-09-06 11:28"
+              }
+            }
+          ]
+        }
+      ],
+      "FractionUnbound": [
+        {
+          "Name": "Healthy",
+          "Species": "Human",
+          "Parameters": [
+            {
+              "Name": "Fraction unbound (plasma, reference value)",
+              "Value": 0.1,
+              "ValueOrigin": {
+                "Source": "ParameterIdentification",
+                "Method": "ParameterIdentification",
+                "Description": "Value updated from 'Parameter Identification 4' on 2019-09-06 11:28"
+              }
+            }
+          ]
+        }
+      ],
+      "Solubility": [
+        {
+          "Name": "Baneyx 2014",
+          "Parameters": [
+            {
+              "Name": "Solubility at reference pH",
+              "Value": 992.0,
+              "Unit": "mg/l",
+              "ValueOrigin": {
+                "Source": "Publication",
+                "Description": "Hanke 2018"
+              }
+            },
+            {
+              "Name": "Reference pH",
+              "Value": 6.5,
+              "ValueOrigin": {
+                "Source": "Publication",
+                "Description": "Hanke 2018"
+              }
+            }
+          ]
+        }
+      ],
+      "IntestinalPermeability": [
+        {
+          "Name": "Optimized",
+          "Parameters": [
+            {
+              "Name": "Specific intestinal permeability (transcellular)",
+              "Value": 0.00057373577138,
+              "Unit": "cm/min",
+              "ValueOrigin": {
+                "Source": "ParameterIdentification",
+                "Method": "ParameterIdentification",
+                "Description": "Value updated from 'Parameter Identification 4' on 2019-09-06 11:28"
+              }
+            }
+          ]
+        }
+      ],
+      "Permeability": [
+        {
+          "Name": "Optimized",
+          "Parameters": [
+            {
+              "Name": "Permeability",
+              "Value": 0.0068752756625,
+              "Unit": "cm/min",
+              "ValueOrigin": {
+                "Source": "ParameterIdentification",
+                "Method": "ParameterIdentification",
+                "Description": "Value updated from 'Parameter Identification 4' on 2019-09-06 11:28"
+              }
+            }
+          ]
+        }
+      ],
+      "PkaTypes": [
+        {
+          "Type": "Base",
+          "Pka": 6.5,
+          "ValueOrigin": {
+            "Source": "Publication",
+            "Description": "Hanke 2018"
+          }
+        }
+      ],
+      "Processes": [
+        {
+          "InternalName": "MetabolizationIntrinsic_FirstOrder",
+          "DataSource": "1st order CL",
+          "Species": "Human",
+          "Molecule": "CYP3A4",
+          "Parameters": [
+            {
+              "Name": "Intrinsic clearance",
+              "Value": 0.5272297928,
+              "Unit": "l/min",
+              "ValueOrigin": {
+                "Source": "ParameterIdentification",
+                "Method": "ParameterIdentification",
+                "Description": "Value updated from 'Parameter Identification 4' on 2019-09-06 11:28"
+              }
+            }
+          ]
+        },
+        {
+          "InternalName": "GlomerularFiltration",
+          "DataSource": "GFR",
+          "Species": "Human",
+          "Parameters": [
+            {
+              "Name": "GFR fraction",
+              "Value": 0.06,
+              "ValueOrigin": {
+                "Source": "Publication",
+                "Description": "Hanke 2018"
+              }
+            }
+          ]
+        }
+      ],
+      "CalculationMethods": [
+        "Cellular partition coefficient method - Rodgers and Rowland",
+        "Cellular permeability - PK-Sim Standard"
+      ],
+      "Parameters": [
+        {
+          "Name": "Molecular weight",
+          "Value": 416.52,
+          "Unit": "g/mol",
+          "ValueOrigin": {
+            "Source": "Publication",
+            "Description": "Drugbank"
           }
         }
       ]
@@ -1660,11 +1636,11 @@
           ],
           "Alternatives": [
             {
-              "AlternativeName": "Healthy",
-              "GroupName": "COMPOUND_FRACTION_UNBOUND"
+              "AlternativeName": "Optimized",
+              "GroupName": "COMPOUND_PERMEABILITY"
             },
             {
-              "AlternativeName": "Fit",
+              "AlternativeName": "Optimized",
               "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
             }
           ],
@@ -1716,7 +1692,7 @@
               "Y": "Bartkowski1989_Control|Organism|PeripheralVenousBlood|Alfentanil|Plasma (Peripheral Venous Blood)",
               "CurveOptions": {
                 "Color": "#FF0000",
-                "LegendIndex": 1
+                "LegendIndex": 4
               }
             },
             {
@@ -1743,7 +1719,257 @@
             }
           ],
           "Name": "Time Profile Analysis",
-          "OriginText": "Erythromycin-Alfentanil-DDI\nBartkowski1989_Control\n2020-01-02 14:19"
+          "OriginText": "Erythromycin-Alfentanil-DDI\nBartkowski1989_Control\n2020-02-27 09:01"
+        }
+      ]
+    },
+    {
+      "Name": "Bartkowski1989_Perpetrator_Day1",
+      "Model": "4Comp",
+      "ObservedData": [
+        "Bartkowski 1993 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv.",
+        "Bartkowski 1989 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv."
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 1.5,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 4.0,
+              "Unit": "pts/h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 1.5,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "End time",
+              "Value": 3.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 20.0,
+              "Unit": "pts/h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 3.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "End time",
+              "Value": 10.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 4.0,
+              "Unit": "pts/h"
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Applications|IV_Alfentanil_0.05mg/kg_30min_Day1|Application_1|ProtocolSchemaItem|Infusion time",
+          "Value": 5.0,
+          "Unit": "min"
+        },
+        {
+          "Path": "Applications|PO_Erythromycin_Day1|Erythromycin_Weibull_enteric-coated-tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Erythromycin|Plasma (Peripheral Venous Blood)",
+        "Organism|PeripheralVenousBlood|Alfentanil|Plasma (Peripheral Venous Blood)"
+      ],
+      "Individual": "European (P-gp modified, CYP3A4 36 h)",
+      "Compounds": [
+        {
+          "Name": "Erythromycin",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Rodgers and Rowland",
+            "Cellular permeability - Charge dependent Schmitt"
+          ],
+          "Alternatives": [
+            {
+              "AlternativeName": "Erythromycin base enteric coated tablet",
+              "GroupName": "COMPOUND_SOLUBILITY"
+            },
+            {
+              "AlternativeName": "Fitted",
+              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
+            }
+          ],
+          "Processes": [
+            {
+              "Name": "CYP3A4-Biotransformation_fitted",
+              "MoleculeName": "CYP3A4"
+            },
+            {
+              "Name": "Total Hepatic Clearance-fitted"
+            },
+            {
+              "Name": "OATP1B1-fitted",
+              "MoleculeName": "OATP1B1"
+            },
+            {
+              "Name": "Glomerular Filtration-fitted"
+            }
+          ],
+          "Protocol": {
+            "Name": "PO_Erythromycin_Day1",
+            "Formulations": [
+              {
+                "Name": "Erythromycin_Weibull_enteric-coated-tablet",
+                "Key": "Formulation"
+              }
+            ]
+          }
+        },
+        {
+          "Name": "Alfentanil",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Rodgers and Rowland",
+            "Cellular permeability - PK-Sim Standard"
+          ],
+          "Alternatives": [
+            {
+              "AlternativeName": "Optimized",
+              "GroupName": "COMPOUND_PERMEABILITY"
+            },
+            {
+              "AlternativeName": "Optimized",
+              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
+            }
+          ],
+          "Processes": [
+            {
+              "Name": "CYP3A4-1st order CL",
+              "MoleculeName": "CYP3A4"
+            },
+            {
+              "Name": "Glomerular Filtration-GFR"
+            }
+          ],
+          "Protocol": {
+            "Name": "IV_Alfentanil_0.05mg/kg_30min_Day1"
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Bartkowski1989_Perpetrator_Day1-Alfentanil-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Bartkowski1989_Perpetrator_Day1|Organism|PeripheralVenousBlood|Alfentanil|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Bartkowski 1993 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv.-Alfentanil-Peripheral Venous Blood-Plasma-Day1 (Concentration) ",
+              "X": "Bartkowski 1993 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv.|Time after erythromycin administration ",
+              "Y": "Bartkowski 1993 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv.|ObservedData|Peripheral Venous Blood|Plasma|Alfentanil|Day1 (Concentration) ",
+              "CurveOptions": {
+                "Color": "#4BACC6",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Bartkowski 1989 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv.-Alfentanil-Peripheral Venous Blood-Plasma-Individual",
+              "X": "Bartkowski 1989 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv.|Time",
+              "Y": "Bartkowski 1989 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv.|ObservedData|Peripheral Venous Blood|Plasma|Alfentanil|Individual",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "OriginText": "Erythromycin-Alfentanil-DDI\nBartkowski1989_Perpetrator_Day1\n2020-02-27 09:02"
+        }
+      ],
+      "Interactions": [
+        {
+          "Name": "CYP3A4-MBI",
+          "MoleculeName": "CYP3A4",
+          "CompoundName": "Erythromycin"
         }
       ]
     },
@@ -1913,40 +2139,11 @@
         }
       ],
       "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Alfentanil|Plasma (Peripheral Venous Blood)",
-        "Organism|PeripheralVenousBlood|Erythromycin|Plasma (Peripheral Venous Blood)"
+        "Organism|PeripheralVenousBlood|Erythromycin|Plasma (Peripheral Venous Blood)",
+        "Organism|PeripheralVenousBlood|Alfentanil|Plasma (Peripheral Venous Blood)"
       ],
       "Individual": "European (P-gp modified, CYP3A4 36 h)",
       "Compounds": [
-        {
-          "Name": "Alfentanil",
-          "CalculationMethods": [
-            "Cellular partition coefficient method - Rodgers and Rowland",
-            "Cellular permeability - PK-Sim Standard"
-          ],
-          "Alternatives": [
-            {
-              "AlternativeName": "Healthy",
-              "GroupName": "COMPOUND_FRACTION_UNBOUND"
-            },
-            {
-              "AlternativeName": "Fit",
-              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
-            }
-          ],
-          "Processes": [
-            {
-              "Name": "CYP3A4-1st order CL",
-              "MoleculeName": "CYP3A4"
-            },
-            {
-              "Name": "Glomerular Filtration-GFR"
-            }
-          ],
-          "Protocol": {
-            "Name": "IV_Alfentanil_0.05mg/kg_30min_Day7"
-          }
-        },
         {
           "Name": "Erythromycin",
           "CalculationMethods": [
@@ -1987,6 +2184,35 @@
                 "Key": "Formulation"
               }
             ]
+          }
+        },
+        {
+          "Name": "Alfentanil",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Rodgers and Rowland",
+            "Cellular permeability - PK-Sim Standard"
+          ],
+          "Alternatives": [
+            {
+              "AlternativeName": "Optimized",
+              "GroupName": "COMPOUND_PERMEABILITY"
+            },
+            {
+              "AlternativeName": "Optimized",
+              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
+            }
+          ],
+          "Processes": [
+            {
+              "Name": "CYP3A4-1st order CL",
+              "MoleculeName": "CYP3A4"
+            },
+            {
+              "Name": "Glomerular Filtration-GFR"
+            }
+          ],
+          "Protocol": {
+            "Name": "IV_Alfentanil_0.05mg/kg_30min_Day7"
           }
         }
       ],
@@ -2051,257 +2277,7 @@
             }
           ],
           "Name": "Time Profile Analysis",
-          "OriginText": "Erythromycin-Alfentanil-DDI_EryUpdate\nBartkowski1989_Perpetrator_Day7\n2020-01-13 17:26"
-        }
-      ],
-      "Interactions": [
-        {
-          "Name": "CYP3A4-MBI",
-          "MoleculeName": "CYP3A4",
-          "CompoundName": "Erythromycin"
-        }
-      ]
-    },
-    {
-      "Name": "Bartkowski1989_Perpetrator_Day1",
-      "Model": "4Comp",
-      "ObservedData": [
-        "Bartkowski 1993 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv.",
-        "Bartkowski 1989 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv."
-      ],
-      "Solver": {},
-      "OutputSchema": [
-        {
-          "Parameters": [
-            {
-              "Name": "Start time",
-              "Value": 0.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "End time",
-              "Value": 1.5,
-              "Unit": "h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            },
-            {
-              "Name": "Resolution",
-              "Value": 4.0,
-              "Unit": "pts/h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            }
-          ]
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "Start time",
-              "Value": 1.5,
-              "Unit": "h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            },
-            {
-              "Name": "End time",
-              "Value": 3.0,
-              "Unit": "h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            },
-            {
-              "Name": "Resolution",
-              "Value": 20.0,
-              "Unit": "pts/h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            }
-          ]
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "Start time",
-              "Value": 3.0,
-              "Unit": "h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            },
-            {
-              "Name": "End time",
-              "Value": 10.0,
-              "Unit": "h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            },
-            {
-              "Name": "Resolution",
-              "Value": 4.0,
-              "Unit": "pts/h"
-            }
-          ]
-        }
-      ],
-      "Parameters": [
-        {
-          "Path": "Applications|IV_Alfentanil_0.05mg/kg_30min_Day1|Application_1|ProtocolSchemaItem|Infusion time",
-          "Value": 5.0,
-          "Unit": "min"
-        },
-        {
-          "Path": "Applications|PO_Erythromycin_Day1|Erythromycin_Weibull_enteric-coated-tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
-          "Value": 3.5,
-          "Unit": "ml/kg"
-        }
-      ],
-      "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Alfentanil|Plasma (Peripheral Venous Blood)",
-        "Organism|PeripheralVenousBlood|Erythromycin|Plasma (Peripheral Venous Blood)"
-      ],
-      "Individual": "European (P-gp modified, CYP3A4 36 h)",
-      "Compounds": [
-        {
-          "Name": "Alfentanil",
-          "CalculationMethods": [
-            "Cellular partition coefficient method - Rodgers and Rowland",
-            "Cellular permeability - PK-Sim Standard"
-          ],
-          "Alternatives": [
-            {
-              "AlternativeName": "Healthy",
-              "GroupName": "COMPOUND_FRACTION_UNBOUND"
-            },
-            {
-              "AlternativeName": "Fit",
-              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
-            }
-          ],
-          "Processes": [
-            {
-              "Name": "CYP3A4-1st order CL",
-              "MoleculeName": "CYP3A4"
-            },
-            {
-              "Name": "Glomerular Filtration-GFR"
-            }
-          ],
-          "Protocol": {
-            "Name": "IV_Alfentanil_0.05mg/kg_30min_Day1"
-          }
-        },
-        {
-          "Name": "Erythromycin",
-          "CalculationMethods": [
-            "Cellular partition coefficient method - Rodgers and Rowland",
-            "Cellular permeability - Charge dependent Schmitt"
-          ],
-          "Alternatives": [
-            {
-              "AlternativeName": "Erythromycin base enteric coated tablet",
-              "GroupName": "COMPOUND_SOLUBILITY"
-            },
-            {
-              "AlternativeName": "Fitted",
-              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
-            }
-          ],
-          "Processes": [
-            {
-              "Name": "CYP3A4-Biotransformation_fitted",
-              "MoleculeName": "CYP3A4"
-            },
-            {
-              "Name": "Total Hepatic Clearance-fitted"
-            },
-            {
-              "Name": "OATP1B1-fitted",
-              "MoleculeName": "OATP1B1"
-            },
-            {
-              "Name": "Glomerular Filtration-fitted"
-            }
-          ],
-          "Protocol": {
-            "Name": "PO_Erythromycin_Day1",
-            "Formulations": [
-              {
-                "Name": "Erythromycin_Weibull_enteric-coated-tablet",
-                "Key": "Formulation"
-              }
-            ]
-          }
-        }
-      ],
-      "HasResults": true,
-      "IndividualAnalyses": [
-        {
-          "Axes": [
-            {
-              "Unit": "h",
-              "Dimension": "Time",
-              "Type": "X",
-              "GridLines": false,
-              "Visible": true,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "None",
-              "Scaling": "Linear",
-              "NumberMode": "Normal"
-            },
-            {
-              "Unit": "µmol/l",
-              "Dimension": "Concentration (molar)",
-              "Type": "Y",
-              "GridLines": false,
-              "Visible": true,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "Solid",
-              "Scaling": "Log",
-              "NumberMode": "Normal"
-            }
-          ],
-          "Curves": [
-            {
-              "Name": "Bartkowski1989_Perpetrator_Day1-Alfentanil-Peripheral Venous Blood-Plasma-Concentration",
-              "X": "Time",
-              "Y": "Bartkowski1989_Perpetrator_Day1|Organism|PeripheralVenousBlood|Alfentanil|Plasma (Peripheral Venous Blood)",
-              "CurveOptions": {
-                "Color": "#FF0000",
-                "LegendIndex": 1
-              }
-            },
-            {
-              "Name": "Bartkowski 1993 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv.-Alfentanil-Peripheral Venous Blood-Plasma-Day1 (Concentration) ",
-              "X": "Bartkowski 1993 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv.|Time after erythromycin administration ",
-              "Y": "Bartkowski 1993 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv.|ObservedData|Peripheral Venous Blood|Plasma|Alfentanil|Day1 (Concentration) ",
-              "CurveOptions": {
-                "Color": "#4BACC6",
-                "LegendIndex": 3,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "Bartkowski 1989 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv.-Alfentanil-Peripheral Venous Blood-Plasma-Individual",
-              "X": "Bartkowski 1989 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv.|Time",
-              "Y": "Bartkowski 1989 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv.|ObservedData|Peripheral Venous Blood|Plasma|Alfentanil|Individual",
-              "CurveOptions": {
-                "Color": "#0000FF",
-                "LegendIndex": 2,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            }
-          ],
-          "Name": "Time Profile Analysis",
-          "OriginText": "Erythromycin-Alfentanil-DDI_EryUpdate\nBartkowski1989_Perpetrator_Day1\n2020-01-13 17:25"
+          "OriginText": "Erythromycin-Alfentanil-DDI\nBartkowski1989_Perpetrator_Day7\n2020-02-27 09:05"
         }
       ],
       "Interactions": [
@@ -2351,7 +2327,7 @@
         },
         {
           "Name": "Molecule",
-          "Value": "Alfentanil"
+          "Value": "Alfentanil_NEW"
         },
         {
           "Name": "Species",
@@ -2490,7 +2466,7 @@
         },
         {
           "Name": "Molecule",
-          "Value": "Alfentanil"
+          "Value": "Alfentanil_NEW"
         },
         {
           "Name": "Species",
@@ -2629,7 +2605,7 @@
         },
         {
           "Name": "Molecule",
-          "Value": "Alfentanil"
+          "Value": "Alfentanil_NEW"
         },
         {
           "Name": "Species",
@@ -2748,7 +2724,7 @@
         },
         {
           "Name": "Molecule",
-          "Value": "Alfentanil"
+          "Value": "Alfentanil_NEW"
         },
         {
           "Name": "Species",
@@ -2839,7 +2815,7 @@
         },
         {
           "Name": "Molecule",
-          "Value": "Alfentanil"
+          "Value": "Alfentanil_NEW"
         },
         {
           "Name": "Species",
@@ -2932,7 +2908,7 @@
         },
         {
           "Name": "Molecule",
-          "Value": "Alfentanil"
+          "Value": "Alfentanil_NEW"
         },
         {
           "Name": "Species",
