@@ -1701,18 +1701,18 @@
               "Y": "Bartkowski 1989 - Control - Alfentanil - IV - 50 µg/kg - Serum - indiv.|ObservedData|Peripheral Venous Blood|Plasma|Alfentanil|Individual",
               "CurveOptions": {
                 "Color": "#0000FF",
-                "LegendIndex": 2,
+                "LegendIndex": 5,
                 "LineStyle": "None",
                 "Symbol": "Circle"
               }
             },
             {
-              "Name": "Bartkowski 1993 - Control - Alfentanil - IV - 50 µg/kg - Serum - indiv.-Alfentanil-Peripheral Venous Blood-Plasma-Control (Concentration) ",
-              "X": "Bartkowski 1993 - Control - Alfentanil - IV - 50 µg/kg - Serum - indiv.|Time ",
-              "Y": "Bartkowski 1993 - Control - Alfentanil - IV - 50 µg/kg - Serum - indiv.|ObservedData|Peripheral Venous Blood|Plasma|Alfentanil|Control (Concentration) ",
+              "Name": "Bartkowski 1993 - Control - Alfentanil - IV - 50 µg/kg - Serum - indiv.-Alfentanil-Peripheral Venous Blood-Plasma-Individual",
+              "X": "Bartkowski 1993 - Control - Alfentanil - IV - 50 µg/kg - Serum - indiv.|Time",
+              "Y": "Bartkowski 1993 - Control - Alfentanil - IV - 50 µg/kg - Serum - indiv.|ObservedData|Peripheral Venous Blood|Plasma|Alfentanil|Individual",
               "CurveOptions": {
-                "Color": "#4BACC6",
-                "LegendIndex": 3,
+                "Color": "#008000",
+                "LegendIndex": 6,
                 "LineStyle": "None",
                 "Symbol": "Circle"
               }
@@ -1724,261 +1724,11 @@
       ]
     },
     {
-      "Name": "Bartkowski1989_Perpetrator_Day1",
-      "Model": "4Comp",
-      "ObservedData": [
-        "Bartkowski 1993 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv.",
-        "Bartkowski 1989 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv."
-      ],
-      "Solver": {},
-      "OutputSchema": [
-        {
-          "Parameters": [
-            {
-              "Name": "Start time",
-              "Value": 0.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "End time",
-              "Value": 1.5,
-              "Unit": "h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            },
-            {
-              "Name": "Resolution",
-              "Value": 4.0,
-              "Unit": "pts/h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            }
-          ]
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "Start time",
-              "Value": 1.5,
-              "Unit": "h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            },
-            {
-              "Name": "End time",
-              "Value": 3.0,
-              "Unit": "h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            },
-            {
-              "Name": "Resolution",
-              "Value": 20.0,
-              "Unit": "pts/h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            }
-          ]
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "Start time",
-              "Value": 3.0,
-              "Unit": "h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            },
-            {
-              "Name": "End time",
-              "Value": 10.0,
-              "Unit": "h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            },
-            {
-              "Name": "Resolution",
-              "Value": 4.0,
-              "Unit": "pts/h"
-            }
-          ]
-        }
-      ],
-      "Parameters": [
-        {
-          "Path": "Applications|IV_Alfentanil_0.05mg/kg_30min_Day1|Application_1|ProtocolSchemaItem|Infusion time",
-          "Value": 5.0,
-          "Unit": "min"
-        },
-        {
-          "Path": "Applications|PO_Erythromycin_Day1|Erythromycin_Weibull_enteric-coated-tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
-          "Value": 3.5,
-          "Unit": "ml/kg"
-        }
-      ],
-      "OutputSelections": [
-        "Organism|PeripheralVenousBlood|Erythromycin|Plasma (Peripheral Venous Blood)",
-        "Organism|PeripheralVenousBlood|Alfentanil|Plasma (Peripheral Venous Blood)"
-      ],
-      "Individual": "European (P-gp modified, CYP3A4 36 h)",
-      "Compounds": [
-        {
-          "Name": "Erythromycin",
-          "CalculationMethods": [
-            "Cellular partition coefficient method - Rodgers and Rowland",
-            "Cellular permeability - Charge dependent Schmitt"
-          ],
-          "Alternatives": [
-            {
-              "AlternativeName": "Erythromycin base enteric coated tablet",
-              "GroupName": "COMPOUND_SOLUBILITY"
-            },
-            {
-              "AlternativeName": "Fitted",
-              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
-            }
-          ],
-          "Processes": [
-            {
-              "Name": "CYP3A4-Biotransformation_fitted",
-              "MoleculeName": "CYP3A4"
-            },
-            {
-              "Name": "Total Hepatic Clearance-fitted"
-            },
-            {
-              "Name": "OATP1B1-fitted",
-              "MoleculeName": "OATP1B1"
-            },
-            {
-              "Name": "Glomerular Filtration-fitted"
-            }
-          ],
-          "Protocol": {
-            "Name": "PO_Erythromycin_Day1",
-            "Formulations": [
-              {
-                "Name": "Erythromycin_Weibull_enteric-coated-tablet",
-                "Key": "Formulation"
-              }
-            ]
-          }
-        },
-        {
-          "Name": "Alfentanil",
-          "CalculationMethods": [
-            "Cellular partition coefficient method - Rodgers and Rowland",
-            "Cellular permeability - PK-Sim Standard"
-          ],
-          "Alternatives": [
-            {
-              "AlternativeName": "Optimized",
-              "GroupName": "COMPOUND_PERMEABILITY"
-            },
-            {
-              "AlternativeName": "Optimized",
-              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
-            }
-          ],
-          "Processes": [
-            {
-              "Name": "CYP3A4-1st order CL",
-              "MoleculeName": "CYP3A4"
-            },
-            {
-              "Name": "Glomerular Filtration-GFR"
-            }
-          ],
-          "Protocol": {
-            "Name": "IV_Alfentanil_0.05mg/kg_30min_Day1"
-          }
-        }
-      ],
-      "HasResults": true,
-      "IndividualAnalyses": [
-        {
-          "Axes": [
-            {
-              "Unit": "h",
-              "Dimension": "Time",
-              "Type": "X",
-              "GridLines": false,
-              "Visible": true,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "None",
-              "Scaling": "Linear",
-              "NumberMode": "Normal"
-            },
-            {
-              "Unit": "µmol/l",
-              "Dimension": "Concentration (molar)",
-              "Type": "Y",
-              "GridLines": false,
-              "Visible": true,
-              "DefaultColor": "#FFFFFF",
-              "DefaultLineStyle": "Solid",
-              "Scaling": "Log",
-              "NumberMode": "Normal"
-            }
-          ],
-          "Curves": [
-            {
-              "Name": "Bartkowski1989_Perpetrator_Day1-Alfentanil-Peripheral Venous Blood-Plasma-Concentration",
-              "X": "Time",
-              "Y": "Bartkowski1989_Perpetrator_Day1|Organism|PeripheralVenousBlood|Alfentanil|Plasma (Peripheral Venous Blood)",
-              "CurveOptions": {
-                "Color": "#FF0000",
-                "LegendIndex": 1
-              }
-            },
-            {
-              "Name": "Bartkowski 1993 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv.-Alfentanil-Peripheral Venous Blood-Plasma-Day1 (Concentration) ",
-              "X": "Bartkowski 1993 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv.|Time after erythromycin administration ",
-              "Y": "Bartkowski 1993 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv.|ObservedData|Peripheral Venous Blood|Plasma|Alfentanil|Day1 (Concentration) ",
-              "CurveOptions": {
-                "Color": "#4BACC6",
-                "LegendIndex": 3,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            },
-            {
-              "Name": "Bartkowski 1989 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv.-Alfentanil-Peripheral Venous Blood-Plasma-Individual",
-              "X": "Bartkowski 1989 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv.|Time",
-              "Y": "Bartkowski 1989 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv.|ObservedData|Peripheral Venous Blood|Plasma|Alfentanil|Individual",
-              "CurveOptions": {
-                "Color": "#0000FF",
-                "LegendIndex": 2,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            }
-          ],
-          "Name": "Time Profile Analysis",
-          "OriginText": "Erythromycin-Alfentanil-DDI\nBartkowski1989_Perpetrator_Day1\n2020-02-27 09:02"
-        }
-      ],
-      "Interactions": [
-        {
-          "Name": "CYP3A4-MBI",
-          "MoleculeName": "CYP3A4",
-          "CompoundName": "Erythromycin"
-        }
-      ]
-    },
-    {
       "Name": "Bartkowski1989_Perpetrator_Day7",
       "Model": "4Comp",
       "ObservedData": [
-        "Bartkowski 1993 - Treatment Day 7 - Alfentanil - IV - 50 µg/kg - Serum - indiv.",
-        "Bartkowski 1989 - Treatment Day 7 - Alfentanil - IV - 50 µg/kg - Serum - indiv."
+        "Bartkowski 1989 - Treatment Day 7 - Alfentanil - IV - 50 µg/kg - Serum - indiv.",
+        "Bartkowski 1993 - Treatment Day 7 - Alfentanil - IV - 50 µg/kg - Serum - indiv."
       ],
       "Solver": {},
       "OutputSchema": [
@@ -2254,23 +2004,23 @@
               }
             },
             {
-              "Name": "Bartkowski 1993 - Treatment Day 7 - Alfentanil - IV - 50 µg/kg - Serum - indiv.-Alfentanil-Peripheral Venous Blood-Plasma-Day7 (Concentration) ",
-              "X": "Bartkowski 1993 - Treatment Day 7 - Alfentanil - IV - 50 µg/kg - Serum - indiv.|Time after erythromycin administration ",
-              "Y": "Bartkowski 1993 - Treatment Day 7 - Alfentanil - IV - 50 µg/kg - Serum - indiv.|ObservedData|Peripheral Venous Blood|Plasma|Alfentanil|Day7 (Concentration) ",
-              "CurveOptions": {
-                "Color": "#4BACC6",
-                "LegendIndex": 3,
-                "LineStyle": "None",
-                "Symbol": "Circle"
-              }
-            },
-            {
               "Name": "Bartkowski 1989 - Treatment Day 7 - Alfentanil - IV - 50 µg/kg - Serum - indiv.-Alfentanil-Peripheral Venous Blood-Plasma-Individual",
               "X": "Bartkowski 1989 - Treatment Day 7 - Alfentanil - IV - 50 µg/kg - Serum - indiv.|Time",
               "Y": "Bartkowski 1989 - Treatment Day 7 - Alfentanil - IV - 50 µg/kg - Serum - indiv.|ObservedData|Peripheral Venous Blood|Plasma|Alfentanil|Individual",
               "CurveOptions": {
                 "Color": "#0000FF",
                 "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Bartkowski 1993 - Treatment Day 7 - Alfentanil - IV - 50 µg/kg - Serum - indiv.-Alfentanil-Peripheral Venous Blood-Plasma-Individual",
+              "X": "Bartkowski 1993 - Treatment Day 7 - Alfentanil - IV - 50 µg/kg - Serum - indiv.|Time",
+              "Y": "Bartkowski 1993 - Treatment Day 7 - Alfentanil - IV - 50 µg/kg - Serum - indiv.|ObservedData|Peripheral Venous Blood|Plasma|Alfentanil|Individual",
+              "CurveOptions": {
+                "Color": "#008000",
+                "LegendIndex": 3,
                 "LineStyle": "None",
                 "Symbol": "Circle"
               }
@@ -2287,9 +2037,398 @@
           "CompoundName": "Erythromycin"
         }
       ]
+    },
+    {
+      "Name": "Bartkowski1989_Perpetrator_Day1",
+      "Model": "4Comp",
+      "ObservedData": [
+        "Bartkowski 1989 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv.",
+        "Bartkowski 1993 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv."
+      ],
+      "Solver": {},
+      "OutputSchema": [
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 0.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "End time",
+              "Value": 1.5,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 4.0,
+              "Unit": "pts/h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 1.5,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "End time",
+              "Value": 3.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 20.0,
+              "Unit": "pts/h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            }
+          ]
+        },
+        {
+          "Parameters": [
+            {
+              "Name": "Start time",
+              "Value": 3.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "End time",
+              "Value": 10.0,
+              "Unit": "h",
+              "ValueOrigin": {
+                "Source": "Unknown"
+              }
+            },
+            {
+              "Name": "Resolution",
+              "Value": 4.0,
+              "Unit": "pts/h"
+            }
+          ]
+        }
+      ],
+      "Parameters": [
+        {
+          "Path": "Applications|IV_Alfentanil_0.05mg/kg_30min_Day1|Application_1|ProtocolSchemaItem|Infusion time",
+          "Value": 5.0,
+          "Unit": "min"
+        },
+        {
+          "Path": "Applications|PO_Erythromycin_Day1|Erythromycin_Weibull_enteric-coated-tablet|Application_1|ProtocolSchemaItem|Volume of water/body weight",
+          "Value": 3.5,
+          "Unit": "ml/kg"
+        }
+      ],
+      "OutputSelections": [
+        "Organism|PeripheralVenousBlood|Erythromycin|Plasma (Peripheral Venous Blood)",
+        "Organism|PeripheralVenousBlood|Alfentanil|Plasma (Peripheral Venous Blood)"
+      ],
+      "Individual": "European (P-gp modified, CYP3A4 36 h)",
+      "Compounds": [
+        {
+          "Name": "Erythromycin",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Rodgers and Rowland",
+            "Cellular permeability - Charge dependent Schmitt"
+          ],
+          "Alternatives": [
+            {
+              "AlternativeName": "Erythromycin base enteric coated tablet",
+              "GroupName": "COMPOUND_SOLUBILITY"
+            },
+            {
+              "AlternativeName": "Fitted",
+              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
+            }
+          ],
+          "Processes": [
+            {
+              "Name": "CYP3A4-Biotransformation_fitted",
+              "MoleculeName": "CYP3A4"
+            },
+            {
+              "Name": "Total Hepatic Clearance-fitted"
+            },
+            {
+              "Name": "OATP1B1-fitted",
+              "MoleculeName": "OATP1B1"
+            },
+            {
+              "Name": "Glomerular Filtration-fitted"
+            }
+          ],
+          "Protocol": {
+            "Name": "PO_Erythromycin_Day1",
+            "Formulations": [
+              {
+                "Name": "Erythromycin_Weibull_enteric-coated-tablet",
+                "Key": "Formulation"
+              }
+            ]
+          }
+        },
+        {
+          "Name": "Alfentanil",
+          "CalculationMethods": [
+            "Cellular partition coefficient method - Rodgers and Rowland",
+            "Cellular permeability - PK-Sim Standard"
+          ],
+          "Alternatives": [
+            {
+              "AlternativeName": "Optimized",
+              "GroupName": "COMPOUND_PERMEABILITY"
+            },
+            {
+              "AlternativeName": "Optimized",
+              "GroupName": "COMPOUND_INTESTINAL_PERMEABILITY"
+            }
+          ],
+          "Processes": [
+            {
+              "Name": "CYP3A4-1st order CL",
+              "MoleculeName": "CYP3A4"
+            },
+            {
+              "Name": "Glomerular Filtration-GFR"
+            }
+          ],
+          "Protocol": {
+            "Name": "IV_Alfentanil_0.05mg/kg_30min_Day1"
+          }
+        }
+      ],
+      "HasResults": true,
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Bartkowski1989_Perpetrator_Day1-Alfentanil-Peripheral Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Bartkowski1989_Perpetrator_Day1|Organism|PeripheralVenousBlood|Alfentanil|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Bartkowski 1989 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv.-Alfentanil-Peripheral Venous Blood-Plasma-Individual",
+              "X": "Bartkowski 1989 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv.|Time",
+              "Y": "Bartkowski 1989 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv.|ObservedData|Peripheral Venous Blood|Plasma|Alfentanil|Individual",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Bartkowski 1993 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv.-Alfentanil-Peripheral Venous Blood-Plasma-Individual",
+              "X": "Bartkowski 1993 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv.|Time",
+              "Y": "Bartkowski 1993 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv.|ObservedData|Peripheral Venous Blood|Plasma|Alfentanil|Individual",
+              "CurveOptions": {
+                "Color": "#008000",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Time Profile Analysis",
+          "OriginText": "Erythromycin-Alfentanil-DDI\nBartkowski1989_Perpetrator_Day1\n2020-02-27 09:02"
+        }
+      ],
+      "Interactions": [
+        {
+          "Name": "CYP3A4-MBI",
+          "MoleculeName": "CYP3A4",
+          "CompoundName": "Erythromycin"
+        }
+      ]
     }
   ],
   "ObservedData": [
+    {
+      "Name": "Bartkowski 1989 - Control - Alfentanil - IV - 50 µg/kg - Serum - indiv.",
+      "ExtendedProperties": [
+        {
+          "Name": "DB Version",
+          "Value": "OSP DATABASE"
+        },
+        {
+          "Name": "ID",
+          "Value": 778.0
+        },
+        {
+          "Name": "Study Id",
+          "Value": "Bartkowski 1989"
+        },
+        {
+          "Name": "Reference",
+          "Value": "https://www.ncbi.nlm.nih.gov/pubmed/2501060"
+        },
+        {
+          "Name": "Source",
+          "Value": "Fig. 1"
+        },
+        {
+          "Name": "Grouping",
+          "Value": "Control"
+        },
+        {
+          "Name": "Data type",
+          "Value": "individual"
+        },
+        {
+          "Name": "N",
+          "Value": 6.0
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Alfentanil"
+        },
+        {
+          "Name": "Species",
+          "Value": "Human"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Peripheral Venous Blood"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Plasma"
+        },
+        {
+          "Name": "Route",
+          "Value": "IV"
+        },
+        {
+          "Name": "Dose",
+          "Value": "50 µg/kg"
+        },
+        {
+          "Name": "Times of Administration [h]",
+          "Value": 0.0
+        },
+        {
+          "Name": "Formulation",
+          "Value": "."
+        },
+        {
+          "Name": "Food state",
+          "Value": "Fasted"
+        },
+        {
+          "Name": "Comment",
+          "Value": "."
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Avg",
+          "QuantityInfo": {
+            "Name": "Avg",
+            "Path": "Bartkowski 1989 - Control - Alfentanil - IV - 50 µg/kg - Serum - indiv.|ObservedData|Peripheral Venous Blood|Plasma|Alfentanil|Individual"
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "Date": "0001-01-01T00:00:00",
+            "MolWeight": 416.52
+          },
+          "Values": [
+            0.2747963,
+            0.2030085,
+            0.1452516,
+            0.1073704,
+            0.065604046,
+            0.0470218,
+            0.03890292,
+            0.0178707,
+            0.01283194,
+            0.00864430051,
+            0.005207983,
+            0.003344742,
+            0.002326359
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time",
+        "QuantityInfo": {
+          "Name": "Time",
+          "Path": "Bartkowski 1989 - Control - Alfentanil - IV - 50 µg/kg - Serum - indiv.|Time",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined",
+          "Date": "0001-01-01T00:00:00"
+        },
+        "Values": [
+          0.1,
+          0.166666672,
+          0.25,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0,
+          8.0
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
     {
       "Name": "Bartkowski 1989 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv.",
       "ExtendedProperties": [
@@ -2327,7 +2466,7 @@
         },
         {
           "Name": "Molecule",
-          "Value": "Alfentanil_NEW"
+          "Value": "Alfentanil"
         },
         {
           "Name": "Species",
@@ -2466,7 +2605,7 @@
         },
         {
           "Name": "Molecule",
-          "Value": "Alfentanil_NEW"
+          "Value": "Alfentanil"
         },
         {
           "Name": "Species",
@@ -2569,7 +2708,7 @@
       }
     },
     {
-      "Name": "Bartkowski 1989 - Control - Alfentanil - IV - 50 µg/kg - Serum - indiv.",
+      "Name": "Bartkowski 1993 - Control - Alfentanil - IV - 50 µg/kg - Serum - indiv.",
       "ExtendedProperties": [
         {
           "Name": "DB Version",
@@ -2577,19 +2716,19 @@
         },
         {
           "Name": "ID",
-          "Value": 778.0
+          "Value": 846.0
         },
         {
           "Name": "Study Id",
-          "Value": "Bartkowski 1989"
+          "Value": "Bartkowski 1993"
         },
         {
           "Name": "Reference",
-          "Value": "https://www.ncbi.nlm.nih.gov/pubmed/2501060"
+          "Value": "https://www.ncbi.nlm.nih.gov/pubmed/8439020"
         },
         {
           "Name": "Source",
-          "Value": "Fig. 1"
+          "Value": "Fig. 2"
         },
         {
           "Name": "Grouping",
@@ -2605,7 +2744,7 @@
         },
         {
           "Name": "Molecule",
-          "Value": "Alfentanil_NEW"
+          "Value": "Alfentanil"
         },
         {
           "Name": "Species",
@@ -2649,7 +2788,7 @@
           "Name": "Avg",
           "QuantityInfo": {
             "Name": "Avg",
-            "Path": "Bartkowski 1989 - Control - Alfentanil - IV - 50 µg/kg - Serum - indiv.|ObservedData|Peripheral Venous Blood|Plasma|Alfentanil|Individual"
+            "Path": "Bartkowski 1993 - Control - Alfentanil - IV - 50 µg/kg - Serum - indiv.|ObservedData|Peripheral Venous Blood|Plasma|Alfentanil|Individual"
           },
           "DataInfo": {
             "Origin": "Observation",
@@ -2658,109 +2797,13 @@
             "MolWeight": 416.52
           },
           "Values": [
-            0.2747963,
-            0.2030085,
-            0.1452516,
-            0.1073704,
-            0.065604046,
-            0.0470218,
-            0.03890292,
-            0.0178707,
-            0.01283194,
-            0.00864430051,
-            0.005207983,
-            0.003344742,
-            0.002326359
-          ],
-          "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
-        }
-      ],
-      "BaseGrid": {
-        "Name": "Time",
-        "QuantityInfo": {
-          "Name": "Time",
-          "Path": "Bartkowski 1989 - Control - Alfentanil - IV - 50 µg/kg - Serum - indiv.|Time",
-          "Type": "Time"
-        },
-        "DataInfo": {
-          "Origin": "BaseGrid",
-          "AuxiliaryType": "Undefined",
-          "Date": "0001-01-01T00:00:00"
-        },
-        "Values": [
-          0.1,
-          0.166666672,
-          0.25,
-          0.5,
-          1.0,
-          1.5,
-          2.0,
-          3.0,
-          4.0,
-          5.0,
-          6.0,
-          7.0,
-          8.0
-        ],
-        "Dimension": "Time",
-        "Unit": "h"
-      }
-    },
-    {
-      "Name": "Bartkowski 1993 - Control - Alfentanil - IV - 50 µg/kg - Serum - indiv.",
-      "ExtendedProperties": [
-        {
-          "Name": "Source",
-          "Value": "C:\\Projects\\BAY_1002670_Vilaprisan_PBPK_support_0216\\Models\\Erythromycin\\Data\\ObsData_Erythromycin_DDI\\Bartkowski1993.xlsx.Control"
-        },
-        {
-          "Name": "File",
-          "Value": "Bartkowski1993"
-        },
-        {
-          "Name": "Sheet",
-          "Value": "Control"
-        },
-        {
-          "Name": "Molecule",
-          "Value": "Alfentanil_NEW"
-        },
-        {
-          "Name": "Species",
-          "Value": "Human"
-        },
-        {
-          "Name": "Organ",
-          "Value": "Peripheral Venous Blood"
-        },
-        {
-          "Name": "Compartment",
-          "Value": "Plasma"
-        }
-      ],
-      "Columns": [
-        {
-          "Name": "Control (Concentration) ",
-          "QuantityInfo": {
-            "Name": "Control (Concentration) ",
-            "Path": "Bartkowski 1993 - Control - Alfentanil - IV - 50 µg/kg - Serum - indiv.|ObservedData|Peripheral Venous Blood|Plasma|Alfentanil|Control (Concentration) "
-          },
-          "DataInfo": {
-            "Origin": "Observation",
-            "AuxiliaryType": "Undefined",
-            "Date": "2018-11-07T15:22:50.473711+01:00",
-            "Source": "Bartkowski1993.Control.Control (Concentration) [ng/mL]",
-            "MolWeight": 416.52
-          },
-          "Values": [
-            0.120190509,
+            0.120190494,
             0.07453243,
             0.04375653,
             0.0356712975,
             0.02039494,
-            0.01450891,
-            0.01018339,
+            0.0145089105,
+            0.0101833893,
             0.006859829,
             0.003976759,
             0.002536557
@@ -2770,17 +2813,16 @@
         }
       ],
       "BaseGrid": {
-        "Name": "Time ",
+        "Name": "Time",
         "QuantityInfo": {
-          "Name": "Time ",
-          "Path": "Bartkowski 1993 - Control - Alfentanil - IV - 50 µg/kg - Serum - indiv.|Time ",
+          "Name": "Time",
+          "Path": "Bartkowski 1993 - Control - Alfentanil - IV - 50 µg/kg - Serum - indiv.|Time",
           "Type": "Time"
         },
         "DataInfo": {
           "Origin": "BaseGrid",
           "AuxiliaryType": "Undefined",
-          "Date": "2018-11-07T15:22:50.473711+01:00",
-          "Source": "Bartkowski1993.Control.Time [min]"
+          "Date": "0001-01-01T00:00:00"
         },
         "Values": [
           0.5,
@@ -2802,20 +2844,40 @@
       "Name": "Bartkowski 1993 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv.",
       "ExtendedProperties": [
         {
+          "Name": "DB Version",
+          "Value": "OSP DATABASE"
+        },
+        {
+          "Name": "ID",
+          "Value": 847.0
+        },
+        {
+          "Name": "Study Id",
+          "Value": "Bartkowski 1993"
+        },
+        {
+          "Name": "Reference",
+          "Value": "https://www.ncbi.nlm.nih.gov/pubmed/8439020"
+        },
+        {
           "Name": "Source",
-          "Value": "C:\\Projects\\BAY_1002670_Vilaprisan_PBPK_support_0216\\Models\\Erythromycin\\Data\\ObsData_Erythromycin_DDI\\Bartkowski1993.xlsx.Day1"
+          "Value": "Fig. 2"
         },
         {
-          "Name": "File",
-          "Value": "Bartkowski1993"
+          "Name": "Grouping",
+          "Value": "Treatment Day 1"
         },
         {
-          "Name": "Sheet",
-          "Value": "Day1"
+          "Name": "Data type",
+          "Value": "individual"
+        },
+        {
+          "Name": "N",
+          "Value": 6.0
         },
         {
           "Name": "Molecule",
-          "Value": "Alfentanil_NEW"
+          "Value": "Alfentanil"
         },
         {
           "Name": "Species",
@@ -2828,32 +2890,55 @@
         {
           "Name": "Compartment",
           "Value": "Plasma"
+        },
+        {
+          "Name": "Route",
+          "Value": "IV"
+        },
+        {
+          "Name": "Dose",
+          "Value": "50 µg/kg"
+        },
+        {
+          "Name": "Times of Administration [h]",
+          "Value": 1.5
+        },
+        {
+          "Name": "Formulation",
+          "Value": "."
+        },
+        {
+          "Name": "Food state",
+          "Value": "Fasted"
+        },
+        {
+          "Name": "Comment",
+          "Value": "."
         }
       ],
       "Columns": [
         {
-          "Name": "Day1 (Concentration) ",
+          "Name": "Avg",
           "QuantityInfo": {
-            "Name": "Day1 (Concentration) ",
-            "Path": "Bartkowski 1993 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv.|ObservedData|Peripheral Venous Blood|Plasma|Alfentanil|Day1 (Concentration) "
+            "Name": "Avg",
+            "Path": "Bartkowski 1993 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv.|ObservedData|Peripheral Venous Blood|Plasma|Alfentanil|Individual"
           },
           "DataInfo": {
             "Origin": "Observation",
             "AuxiliaryType": "Undefined",
-            "Date": "2018-11-07T15:22:50.473711+01:00",
-            "Source": "Bartkowski1993.Day1.Day1 (Concentration) [ng/mL]",
+            "Date": "0001-01-01T00:00:00",
             "MolWeight": 416.52
           },
           "Values": [
-            0.2076484,
+            0.207648411,
             0.121849991,
             0.07453243,
             0.04685556,
             0.03872251,
             0.0299122781,
             0.02955565,
-            0.0288055688,
-            0.01888248,
+            0.02880557,
+            0.0188824814,
             0.01307345,
             0.009560584
           ],
@@ -2862,17 +2947,16 @@
         }
       ],
       "BaseGrid": {
-        "Name": "Time after erythromycin administration ",
+        "Name": "Time",
         "QuantityInfo": {
-          "Name": "Time after erythromycin administration ",
-          "Path": "Bartkowski 1993 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv.|Time after erythromycin administration ",
+          "Name": "Time",
+          "Path": "Bartkowski 1993 - Treatment Day 1 - Alfentanil - IV - 50 µg/kg - Serum - indiv.|Time",
           "Type": "Time"
         },
         "DataInfo": {
           "Origin": "BaseGrid",
           "AuxiliaryType": "Undefined",
-          "Date": "2018-11-07T15:22:50.473711+01:00",
-          "Source": "Bartkowski1993.Day1.Time after erythromycin administration [min]"
+          "Date": "0001-01-01T00:00:00"
         },
         "Values": [
           1.75,
@@ -2895,20 +2979,40 @@
       "Name": "Bartkowski 1993 - Treatment Day 7 - Alfentanil - IV - 50 µg/kg - Serum - indiv.",
       "ExtendedProperties": [
         {
+          "Name": "DB Version",
+          "Value": "OSP DATABASE"
+        },
+        {
+          "Name": "ID",
+          "Value": 848.0
+        },
+        {
+          "Name": "Study Id",
+          "Value": "Bartkowski 1993"
+        },
+        {
+          "Name": "Reference",
+          "Value": "https://www.ncbi.nlm.nih.gov/pubmed/8439020"
+        },
+        {
           "Name": "Source",
-          "Value": "C:\\Projects\\BAY_1002670_Vilaprisan_PBPK_support_0216\\Models\\Erythromycin\\Data\\ObsData_Erythromycin_DDI\\Bartkowski1993.xlsx.Day7"
+          "Value": "Fig. 2"
         },
         {
-          "Name": "File",
-          "Value": "Bartkowski1993"
+          "Name": "Grouping",
+          "Value": "Treatment Day 7"
         },
         {
-          "Name": "Sheet",
-          "Value": "Day7"
+          "Name": "Data type",
+          "Value": "individual"
+        },
+        {
+          "Name": "N",
+          "Value": 6.0
         },
         {
           "Name": "Molecule",
-          "Value": "Alfentanil_NEW"
+          "Value": "Alfentanil"
         },
         {
           "Name": "Species",
@@ -2921,24 +3025,47 @@
         {
           "Name": "Compartment",
           "Value": "Plasma"
+        },
+        {
+          "Name": "Route",
+          "Value": "IV"
+        },
+        {
+          "Name": "Dose",
+          "Value": "50 µg/kg"
+        },
+        {
+          "Name": "Times of Administration [h]",
+          "Value": 145.5
+        },
+        {
+          "Name": "Formulation",
+          "Value": "."
+        },
+        {
+          "Name": "Food state",
+          "Value": "Fasted"
+        },
+        {
+          "Name": "Comment",
+          "Value": "."
         }
       ],
       "Columns": [
         {
-          "Name": "Day7 (Concentration) ",
+          "Name": "Avg",
           "QuantityInfo": {
-            "Name": "Day7 (Concentration) ",
-            "Path": "Bartkowski 1993 - Treatment Day 7 - Alfentanil - IV - 50 µg/kg - Serum - indiv.|ObservedData|Peripheral Venous Blood|Plasma|Alfentanil|Day7 (Concentration) "
+            "Name": "Avg",
+            "Path": "Bartkowski 1993 - Treatment Day 7 - Alfentanil - IV - 50 µg/kg - Serum - indiv.|ObservedData|Peripheral Venous Blood|Plasma|Alfentanil|Individual"
           },
           "DataInfo": {
             "Origin": "Observation",
             "AuxiliaryType": "Undefined",
-            "Date": "2018-11-07T15:22:50.473711+01:00",
-            "Source": "Bartkowski1993.Day7.Day7 (Concentration) [ng/mL]",
+            "Date": "0001-01-01T00:00:00",
             "MolWeight": 416.52
           },
           "Values": [
-            0.3260096,
+            0.326009631,
             0.241358608,
             0.1762952,
             0.1170552,
@@ -2947,36 +3074,35 @@
             0.03207951,
             0.02314172,
             0.01669467,
-            0.0169520285
+            0.01695203
           ],
           "Dimension": "Concentration (mass)",
           "Unit": "mg/l"
         }
       ],
       "BaseGrid": {
-        "Name": "Time after erythromycin administration ",
+        "Name": "Time",
         "QuantityInfo": {
-          "Name": "Time after erythromycin administration ",
-          "Path": "Bartkowski 1993 - Treatment Day 7 - Alfentanil - IV - 50 µg/kg - Serum - indiv.|Time after erythromycin administration ",
+          "Name": "Time",
+          "Path": "Bartkowski 1993 - Treatment Day 7 - Alfentanil - IV - 50 µg/kg - Serum - indiv.|Time",
           "Type": "Time"
         },
         "DataInfo": {
           "Origin": "BaseGrid",
           "AuxiliaryType": "Undefined",
-          "Date": "2018-11-07T15:22:50.473711+01:00",
-          "Source": "Bartkowski1993.Day7.Time after erythromycin administration [h]"
+          "Date": "0001-01-01T00:00:00"
         },
         "Values": [
-          145.6,
+          145.667,
           145.75,
           146.0,
           146.5,
           147.0,
+          147.5,
           148.5,
           149.5,
           150.5,
-          151.5,
-          152.5
+          151.5
         ],
         "Dimension": "Time",
         "Unit": "h"
