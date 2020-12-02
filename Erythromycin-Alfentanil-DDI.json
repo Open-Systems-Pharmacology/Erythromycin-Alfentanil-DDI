@@ -1,5 +1,5 @@
 {
-  "Version": 76,
+  "Version": 77,
   "Individuals": [
     {
       "Name": "European (P-gp modified, CYP3A4 36 h)",
@@ -88,12 +88,22 @@
           },
           "Parameters": [
             {
+              "Name": "Reference concentration",
+              "Value": 4.32,
+              "Unit": "µmol/l"
+            },
+            {
               "Name": "t1/2 (liver)",
               "Value": 36.0,
               "Unit": "h",
               "ValueOrigin": {
                 "Source": "Unknown"
               }
+            },
+            {
+              "Name": "t1/2 (intestine)",
+              "Value": 23.0,
+              "Unit": "h"
             }
           ]
         },
@@ -203,6 +213,23 @@
             {
               "Name": "ColonSigmoid",
               "Value": 0.00010384615385
+            }
+          ],
+          "Parameters": [
+            {
+              "Name": "Reference concentration",
+              "Value": 1.0,
+              "Unit": "µmol/l"
+            },
+            {
+              "Name": "t1/2 (liver)",
+              "Value": 36.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "t1/2 (intestine)",
+              "Value": 23.0,
+              "Unit": "h"
             }
           ]
         },
@@ -592,6 +619,16 @@
               "ValueOrigin": {
                 "Source": "Unknown"
               }
+            },
+            {
+              "Name": "t1/2 (liver)",
+              "Value": 36.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "t1/2 (intestine)",
+              "Value": 23.0,
+              "Unit": "h"
             }
           ]
         },
@@ -634,6 +671,23 @@
               "Name": "Muscle",
               "MembraneLocation": "Basolateral",
               "Value": 0.00064682539683
+            }
+          ],
+          "Parameters": [
+            {
+              "Name": "Reference concentration",
+              "Value": 1.0,
+              "Unit": "µmol/l"
+            },
+            {
+              "Name": "t1/2 (liver)",
+              "Value": 36.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "t1/2 (intestine)",
+              "Value": 23.0,
+              "Unit": "h"
             }
           ]
         },
@@ -749,6 +803,16 @@
               "ValueOrigin": {
                 "Source": "Unknown"
               }
+            },
+            {
+              "Name": "t1/2 (liver)",
+              "Value": 36.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "t1/2 (intestine)",
+              "Value": 23.0,
+              "Unit": "h"
             }
           ]
         },
@@ -779,6 +843,16 @@
               "ValueOrigin": {
                 "Source": "Unknown"
               }
+            },
+            {
+              "Name": "t1/2 (liver)",
+              "Value": 36.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "t1/2 (intestine)",
+              "Value": 23.0,
+              "Unit": "h"
             }
           ]
         },
@@ -802,6 +876,16 @@
               "ValueOrigin": {
                 "Source": "Unknown"
               }
+            },
+            {
+              "Name": "t1/2 (liver)",
+              "Value": 36.0,
+              "Unit": "h"
+            },
+            {
+              "Name": "t1/2 (intestine)",
+              "Value": 23.0,
+              "Unit": "h"
             }
           ]
         }
@@ -1583,34 +1667,12 @@
             },
             {
               "Name": "End time",
-              "Value": 2.0,
+              "Value": 8.0,
               "Unit": "h"
             },
             {
               "Name": "Resolution",
               "Value": 20.0,
-              "Unit": "pts/h"
-            }
-          ]
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "Start time",
-              "Value": 2.0,
-              "Unit": "h"
-            },
-            {
-              "Name": "End time",
-              "Value": 8.0,
-              "Unit": "h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            },
-            {
-              "Name": "Resolution",
-              "Value": 4.0,
               "Unit": "pts/h"
             }
           ]
@@ -1650,7 +1712,8 @@
               "MoleculeName": "CYP3A4"
             },
             {
-              "Name": "Glomerular Filtration-GFR"
+              "Name": "Glomerular Filtration-GFR",
+              "SystemicProcessType": "GFR"
             }
           ],
           "Protocol": {
@@ -1674,7 +1737,7 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "µmol/l",
+              "Unit": "µg/l",
               "Dimension": "Concentration (molar)",
               "Type": "Y",
               "GridLines": false,
@@ -1719,7 +1782,7 @@
             }
           ],
           "Name": "Time Profile Analysis",
-          "OriginText": "Erythromycin-Alfentanil-DDI\nBartkowski1989_Control\n2020-02-27 09:01"
+          "OriginText": "Erythromycin-Alfentanil-DDI\nBartkowski1989_Control\n2020-12-02 14:40"
         }
       ]
     },
@@ -1769,7 +1832,7 @@
             },
             {
               "Name": "End time",
-              "Value": 147.0,
+              "Value": 153.5,
               "Unit": "h",
               "ValueOrigin": {
                 "Source": "Unknown"
@@ -1782,31 +1845,6 @@
               "ValueOrigin": {
                 "Source": "Unknown"
               }
-            }
-          ]
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "Start time",
-              "Value": 147.0,
-              "Unit": "h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            },
-            {
-              "Name": "End time",
-              "Value": 154.0,
-              "Unit": "h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            },
-            {
-              "Name": "Resolution",
-              "Value": 4.0,
-              "Unit": "pts/h"
             }
           ]
         }
@@ -1916,14 +1954,16 @@
               "MoleculeName": "CYP3A4"
             },
             {
-              "Name": "Total Hepatic Clearance-fitted"
+              "Name": "Total Hepatic Clearance-fitted",
+              "SystemicProcessType": "Hepatic"
             },
             {
               "Name": "OATP1B1-fitted",
               "MoleculeName": "OATP1B1"
             },
             {
-              "Name": "Glomerular Filtration-fitted"
+              "Name": "Glomerular Filtration-fitted",
+              "SystemicProcessType": "GFR"
             }
           ],
           "Protocol": {
@@ -1958,7 +1998,8 @@
               "MoleculeName": "CYP3A4"
             },
             {
-              "Name": "Glomerular Filtration-GFR"
+              "Name": "Glomerular Filtration-GFR",
+              "SystemicProcessType": "GFR"
             }
           ],
           "Protocol": {
@@ -1982,7 +2023,7 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "µmol/l",
+              "Unit": "µg/l",
               "Dimension": "Concentration (molar)",
               "Type": "Y",
               "GridLines": false,
@@ -2027,7 +2068,7 @@
             }
           ],
           "Name": "Time Profile Analysis",
-          "OriginText": "Erythromycin-Alfentanil-DDI\nBartkowski1989_Perpetrator_Day7\n2020-02-27 09:05"
+          "OriginText": "Erythromycin-Alfentanil-DDI\nBartkowski1989_Perpetrator_Day7\n2020-12-02 14:42"
         }
       ],
       "Interactions": [
@@ -2084,7 +2125,7 @@
             },
             {
               "Name": "End time",
-              "Value": 3.0,
+              "Value": 9.5,
               "Unit": "h",
               "ValueOrigin": {
                 "Source": "Unknown"
@@ -2097,31 +2138,6 @@
               "ValueOrigin": {
                 "Source": "Unknown"
               }
-            }
-          ]
-        },
-        {
-          "Parameters": [
-            {
-              "Name": "Start time",
-              "Value": 3.0,
-              "Unit": "h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            },
-            {
-              "Name": "End time",
-              "Value": 10.0,
-              "Unit": "h",
-              "ValueOrigin": {
-                "Source": "Unknown"
-              }
-            },
-            {
-              "Name": "Resolution",
-              "Value": 4.0,
-              "Unit": "pts/h"
             }
           ]
         }
@@ -2166,14 +2182,16 @@
               "MoleculeName": "CYP3A4"
             },
             {
-              "Name": "Total Hepatic Clearance-fitted"
+              "Name": "Total Hepatic Clearance-fitted",
+              "SystemicProcessType": "Hepatic"
             },
             {
               "Name": "OATP1B1-fitted",
               "MoleculeName": "OATP1B1"
             },
             {
-              "Name": "Glomerular Filtration-fitted"
+              "Name": "Glomerular Filtration-fitted",
+              "SystemicProcessType": "GFR"
             }
           ],
           "Protocol": {
@@ -2208,7 +2226,8 @@
               "MoleculeName": "CYP3A4"
             },
             {
-              "Name": "Glomerular Filtration-GFR"
+              "Name": "Glomerular Filtration-GFR",
+              "SystemicProcessType": "GFR"
             }
           ],
           "Protocol": {
@@ -2232,7 +2251,7 @@
               "NumberMode": "Normal"
             },
             {
-              "Unit": "µmol/l",
+              "Unit": "µg/l",
               "Dimension": "Concentration (molar)",
               "Type": "Y",
               "GridLines": false,
@@ -2277,7 +2296,7 @@
             }
           ],
           "Name": "Time Profile Analysis",
-          "OriginText": "Erythromycin-Alfentanil-DDI\nBartkowski1989_Perpetrator_Day1\n2020-02-27 09:02"
+          "OriginText": "Erythromycin-Alfentanil-DDI\nBartkowski1989_Perpetrator_Day1\n2020-12-02 14:41"
         }
       ],
       "Interactions": [
@@ -2380,22 +2399,22 @@
             "MolWeight": 416.52
           },
           "Values": [
-            0.2747963,
-            0.2030085,
-            0.1452516,
-            0.1073704,
-            0.065604046,
-            0.0470218,
-            0.03890292,
-            0.0178707,
-            0.01283194,
-            0.00864430051,
-            0.005207983,
-            0.003344742,
-            0.002326359
+            274.796326,
+            203.0085,
+            145.2516,
+            107.3704,
+            65.60405,
+            47.0218,
+            38.90292,
+            17.8707,
+            12.83194,
+            8.6443,
+            5.207983,
+            3.344742,
+            2.326359
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/l"
         }
       ],
       "BaseGrid": {
@@ -2519,22 +2538,22 @@
             "MolWeight": 416.52
           },
           "Values": [
-            0.3390593,
-            0.1794489,
-            0.1605851,
-            0.1266632,
-            0.06721241,
-            0.04824575,
-            0.03633242,
-            0.0190285,
-            0.01739914,
-            0.01085528,
-            0.008728917,
-            0.006701466,
-            0.006123849
+            339.0593,
+            179.4489,
+            160.5851,
+            126.663193,
+            67.21241,
+            48.24575,
+            36.33242,
+            19.0285,
+            17.39914,
+            10.85528,
+            8.728917,
+            6.701466,
+            6.123849
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/l"
         }
       ],
       "BaseGrid": {
@@ -2658,22 +2677,22 @@
             "MolWeight": 416.52
           },
           "Values": [
-            0.348621875,
-            0.279759079,
-            0.2011031,
-            0.1446463,
-            0.1144426,
-            0.0949309,
-            0.060261406,
-            0.0470247976,
-            0.0416181,
-            0.0424497724,
-            0.02785588,
-            0.0266794115,
-            0.01864286
+            348.6219,
+            279.7591,
+            201.1031,
+            144.6463,
+            114.4426,
+            94.9309,
+            60.2614059,
+            47.0248,
+            41.6181,
+            42.44977,
+            27.85588,
+            26.67941,
+            18.64286
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/l"
         }
       ],
       "BaseGrid": {
@@ -2797,19 +2816,19 @@
             "MolWeight": 416.52
           },
           "Values": [
-            0.120190494,
-            0.07453243,
-            0.04375653,
-            0.0356712975,
-            0.02039494,
-            0.0145089105,
-            0.0101833893,
-            0.006859829,
-            0.003976759,
-            0.002536557
+            120.190491,
+            74.53243,
+            43.75653,
+            35.6713,
+            20.39494,
+            14.50891,
+            10.18339,
+            6.859829,
+            3.976759,
+            2.536557
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/l"
         }
       ],
       "BaseGrid": {
@@ -2930,20 +2949,20 @@
             "MolWeight": 416.52
           },
           "Values": [
-            0.207648411,
-            0.121849991,
-            0.07453243,
-            0.04685556,
-            0.03872251,
-            0.0299122781,
-            0.02955565,
-            0.02880557,
-            0.0188824814,
-            0.01307345,
-            0.009560584
+            207.6484,
+            121.849991,
+            74.53243,
+            46.85556,
+            38.72251,
+            29.91228,
+            29.55565,
+            28.80557,
+            18.88248,
+            13.07345,
+            9.560584
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/l"
         }
       ],
       "BaseGrid": {
@@ -3065,19 +3084,19 @@
             "MolWeight": 416.52
           },
           "Values": [
-            0.326009631,
-            0.241358608,
-            0.1762952,
-            0.1170552,
-            0.09034785,
-            0.04762191,
-            0.03207951,
-            0.02314172,
-            0.01669467,
-            0.01695203
+            326.0096,
+            241.358612,
+            176.2952,
+            117.0552,
+            90.34785,
+            47.62191,
+            32.07951,
+            23.14172,
+            16.69467,
+            16.95203
           ],
           "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
+          "Unit": "µg/l"
         }
       ],
       "BaseGrid": {
