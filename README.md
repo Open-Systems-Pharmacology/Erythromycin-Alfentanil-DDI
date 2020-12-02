@@ -4,7 +4,7 @@ Modeling of published clinical Erythromycin-Alfentanil-DDI studies for model eva
 
 The repository contains a [PK-Sim snapshot (*.json) file](https://docs.open-systems-pharmacology.org/working-with-pk-sim/pk-sim-documentation/importing-exporting-project-data-models#exporting-project-to-snapshot-loading-project-from-snapshot) containing the respective simulations.
 
-**The latest release of the snapshot can be found [here](https://github.com/Open-Systems-Pharmacology/Erythromycin-Alfentanil-DDI/releases/latest).**
+**The latest release of the snapshot can be found [here](../../releases/latest).**
 
 The reference model repositories can be found here:
 
