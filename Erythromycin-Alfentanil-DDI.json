@@ -1667,7 +1667,7 @@
             },
             {
               "Name": "End time",
-              "Value": 8.0,
+              "Value": 24.0,
               "Unit": "h"
             },
             {
@@ -1782,7 +1782,7 @@
             }
           ],
           "Name": "Time Profile Analysis",
-          "OriginText": "Erythromycin-Alfentanil-DDI\nBartkowski1989_Control\n2020-12-02 14:40"
+          "OriginText": "Erythromycin-Alfentanil-DDI\nBartkowski1989_Control\n2020-12-10 16:28"
         }
       ]
     },
@@ -1832,7 +1832,7 @@
             },
             {
               "Name": "End time",
-              "Value": 153.5,
+              "Value": 169.5,
               "Unit": "h",
               "ValueOrigin": {
                 "Source": "Unknown"
@@ -2068,7 +2068,7 @@
             }
           ],
           "Name": "Time Profile Analysis",
-          "OriginText": "Erythromycin-Alfentanil-DDI\nBartkowski1989_Perpetrator_Day7\n2020-12-02 14:42"
+          "OriginText": "Erythromycin-Alfentanil-DDI\nBartkowski1989_Perpetrator_Day7\n2020-12-10 16:31"
         }
       ],
       "Interactions": [
@@ -2125,7 +2125,7 @@
             },
             {
               "Name": "End time",
-              "Value": 9.5,
+              "Value": 25.5,
               "Unit": "h",
               "ValueOrigin": {
                 "Source": "Unknown"
@@ -2296,7 +2296,7 @@
             }
           ],
           "Name": "Time Profile Analysis",
-          "OriginText": "Erythromycin-Alfentanil-DDI\nBartkowski1989_Perpetrator_Day1\n2020-12-02 14:41"
+          "OriginText": "Erythromycin-Alfentanil-DDI\nBartkowski1989_Perpetrator_Day1\n2020-12-10 16:29"
         }
       ],
       "Interactions": [
